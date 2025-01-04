@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.title {
+    font-family: 'Lobster', cursive; /* Unique, elegant font */
+    font-size: 1.5rem; /* Reduced font size for smaller text */
+    font-weight: bold; /* Ensures text stands out */
+    color: #ffffff; /* Text color */
+    background: linear-gradient(135deg, red, black); /* Gradient background */
+    padding: 15px; /* Reduced padding for proportion */
+    text-align: center; /* Centers the text */
+    border-radius: 15px; /* Rounded corners for a soft look */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow for prominence */
+    margin: 15px; /* Space around the tile */
+    text-transform: capitalize; /* Capitalizes the text */
+    letter-spacing: 2px; /* Reduced spacing for better fit */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
+    animation: float 3s ease-in-out infinite; /* Subtle floating animation */
+}
+
+.logo-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Flex Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar h2 {
+    margin-top: 0;
+    color: #333;
+}
+.menu-item {
+    padding: 10px 0;
+    color: #666;
+    cursor: pointer;
+}
+.menu-item.active {
+    color: #000;
+    font-weight: bold;
+}
+.special-offers {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffdd57;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu-item:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.product:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.section {
+    margin-bottom: 30px;
+}
+.section h3 {
+    margin-top: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between items */
+    margin-bottom: 20px; /* Space below the menu */
+    background-color: #f8f9fa; /* Light background for the menu */
+    padding: 10px 0; /* Padding for the menu */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.menu-item {
+    flex: 1; /* Each item takes equal space */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding for each menu item */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.menu-item:hover {
+    background-color: #e2e6ea; /* Change background on hover */
+}
+
+.menu-item.active {
+    background-color: #28a745; /* Active menu item color */
+    color: white; /* Text color for active item */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Distributes space evenly between items */
+    margin: 20px 0; /* Space above and below the product list */
+}
+
+.product {
+    background-color: #ffffff; /* White background for each product card */
+    border: 1px solid #ccc; /* Border around each product */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside each product */
+    margin: 10px; /* Margin around each product */
+    flex: 1 1 calc(30% - 20px); /* Flex-grow, flex-shrink, and basis for responsive layout */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside product */
+    transition: transform 0.2s; /* Smooth transform transition */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product img {
+    max-width: 90px; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.product h4 {
+    margin: 10px 0; /* Space above and below the product title */
+}
+
+.product p {
+    margin: 5px 0; /* Space above and below the product price */
+}
+
+.product button {
+    background-color: #28a745; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.product button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e5533f;
+}
+
+/* Order Summary */
+.order-summary {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.order-summary h3 {
+    margin-top: 0;
+}
+.order-item {
+    margin: 10px 0;
+    color: #555;
+}
+.total {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.confirm-button {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.confirm-button:hover {
+    background-color: #218838;
+}
+.cancel-button {
+    width: 50%;
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.cancel-button:hover {
+    background-color: #e5533f;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #005bb5;
+}
